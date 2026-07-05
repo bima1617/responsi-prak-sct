@@ -1,0 +1,166 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bytes32",
+						"name": "hashDokumen",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "nomor",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "pemilik",
+						"type": "string"
+					}
+				],
+				"name": "SertifikatDitambahkan",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nomor",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pemilik",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_lokasi",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_luas",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "_hash",
+						"type": "bytes32"
+					}
+				],
+				"name": "tambahSertifikat",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_hash",
+						"type": "bytes32"
+					}
+				],
+				"name": "verifikasiSertifikat",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "nomor",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "pemilik",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "lokasi",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "luas",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tanggal",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "status",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SertifikatTanah.sol": "SertifikatTanah"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"SertifikatTanah.sol": {
+			"keccak256": "0xb524c85ab7ea1fa17ff765fae0a3884d4f5710d68f6876b1698863d480dcb25f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://84479c3ba8c03d75f299b44ab311b329257831bbf712f6749c84fbeeb246108d",
+				"dweb:/ipfs/QmWqSzQibS6kAxuxL62ecw4J1BK9mV4b3BTDsDg3mABEzU"
+			]
+		}
+	},
+	"version": 1
+}
